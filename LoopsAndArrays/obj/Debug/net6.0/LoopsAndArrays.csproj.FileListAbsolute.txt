@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\bin\Debug\net6.0\LoopsAndArrays.exe
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\bin\Debug\net6.0\LoopsAndArrays.deps.json
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\bin\Debug\net6.0\LoopsAndArrays.runtimeconfig.json
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\bin\Debug\net6.0\LoopsAndArrays.dll
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\bin\Debug\net6.0\LoopsAndArrays.pdb
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\LoopsAndArrays.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\LoopsAndArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\LoopsAndArrays.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\LoopsAndArrays.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\LoopsAndArrays.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\LoopsAndArrays.dll
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\refint\LoopsAndArrays.dll
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\LoopsAndArrays.pdb
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\LoopsAndArrays.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET repository\LoopsAndArrays\obj\Debug\net6.0\ref\LoopsAndArrays.dll
