@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace LoopsAndArrays
 {
-    public class Classwork
+    public class ClassWork
     {
-        public static void bubleSortAray()
+        public void bubleSortAray()
         {
             int length = 0;
 
@@ -47,13 +47,13 @@ namespace LoopsAndArrays
 
             for (int j = 0; j < length; j++)
             {
-                for (int i = 1; i < length; i++)
+                for (int i = 1; j < length; j++)
                 {
-                    if (myArray[i] < myArray[i - 1])
+                    if (myArray[j] < myArray[j - 1])
                     {
-                        temp = myArray[i];
-                        myArray[i] = myArray[i - 1];
-                        myArray[i - 1] = temp;
+                        temp = myArray[j];
+                        myArray[j] = myArray[j - 1];
+                        myArray[j - 1] = temp;
                     }
                     else
                         continue;
