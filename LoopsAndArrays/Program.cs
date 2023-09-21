@@ -1,4 +1,10 @@
-﻿//////string[] myStringArray = new string[] { "gio", "lasha","saba", "misho"};
+﻿using LoopsAndArrays;
+
+Classwork.bubleSortAray();
+
+
+
+//////string[] myStringArray = new string[] { "gio", "lasha","saba", "misho"};
 
 //////int[] myIntArray =  new int[4];
 
@@ -65,17 +71,17 @@
 //    }
 //}
 
-int[][] myJaggedArray = new int[2][]; //arichxubebs tu ertidaigive sigrdzis araa
+//int[][] myJaggedArray = new int[2][]; //arichxubebs tu ertidaigive sigrdzis araa
 
-myJaggedArray[0] = new int[2] { 1, 2 };
-myJaggedArray[1] = new int[1] { 1 };
+//myJaggedArray[0] = new int[2] { 1, 2 };
+//myJaggedArray[1] = new int[1] { 1 };
 
-for (int i = 0; i < myJaggedArray.Length; i++)
-{
-    var lengthOfArray = myJaggedArray[i].Length;
+//for (int i = 0; i < myJaggedArray.Length; i++)
+//{
+//    var lengthOfArray = myJaggedArray[i].Length;
 
-    for (int j = 0; j < lengthOfArray; j++)
-    {
-        Console.WriteLine(myJaggedArray[i][j]);
-    }
-}
+//    for (int j = 0; j < lengthOfArray; j++)
+//    {
+//        Console.WriteLine(myJaggedArray[i][j]);
+//    }
+//}
