@@ -1,6 +1,4 @@
-﻿/*
- * 
- * //Exercise 1: Prime Number Checker
+﻿//Exercise 1: Prime Number Checker
 Console.WriteLine("Prime Number Checker");
 while (true)
 {
@@ -47,7 +45,7 @@ while (true)
 }
 
 //Exercise 2: Fibonacci Sequence Generator
-Console.WriteLine("Fibonacci Sequence Generator");
+Console.WriteLine("\nFibonacci Sequence Generator");
 while (true)
 {
     Console.Write("Enter a number (or type 'exit' to quit): ");
@@ -78,7 +76,7 @@ while (true)
 }
 
 //Exercise 3: Palindrome Checker
-Console.WriteLine("Palindrome Checker");
+Console.WriteLine("\nPalindrome Checker");
 while (true)
 {
     Console.Write("Enter a word (or type 'exit' to quit): ");
@@ -102,12 +100,12 @@ while (true)
         Console.WriteLine("Not Palindrome");
 }
 
-*/
+
 
 //Exercise 4: Sorting Algorithm
-Console.WriteLine("Sorting array: { 64, 34, 25, 12, 22, 11, 90 }");
+Console.WriteLine("\nSorting array: { 64, 34, 25, 12, 22, 11, 90 }");
 
-Console.WriteLine("Bubble sort");
+Console.WriteLine("\nBubble sort");
 int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
 int n = arr.Length;
 int temp = 0;
@@ -175,35 +173,72 @@ foreach (int num in arr)
 {
     Console.Write(num + " ");
 }
+Console.WriteLine();
 
 //Exercise 5: Temperature Converter
-
+Console.WriteLine("\nTemperature Converter");
 while (true)
 {    
-        Console.Write("\nTemperature In Celsius: ");
-        string inputStr = Console.ReadLine();
+    Console.Write("Temperature In Celsius (or type 'exit' to quit): ");
+    string inputStr = Console.ReadLine();
 
-        if (!int.TryParse(inputStr, out int input))
+    if (inputStr.ToLower() == "exit")
+    {
+        break;
+    }
+
+    if (!int.TryParse(inputStr, out int input))
         {
             Console.WriteLine("Invalid input. Please enter a valid number.");
             continue;
         }
 
-        Console.Write("Convert to (F)ahrenheit or (K)elvin: ");
-        string convertTo = Console.ReadLine();
-        switch (convertTo.ToLower())
-        {
-            case "f":
-                Console.WriteLine("Temperature in Fahrenheit: " + (input * 9 / 5 + 32));
-                break;
-            case "k":
-                Console.WriteLine("Temperature in Kelvin: " + (input + 273.15));
-                break;
-            default:
-                Console.WriteLine("Invalid option. Please enter 'F' or 'K'.");
-                break;
-        }
+    Console.Write("Convert to (F)ahrenheit or (K)elvin (or type 'exit' to quit): ");
+    string convertTo = Console.ReadLine();
+    switch (convertTo.ToLower())
+    {
+        case "f":
+            Console.WriteLine("Temperature in Fahrenheit: " + (input * 9 / 5 + 32));
+            break;
+        case "k":
+            Console.WriteLine("Temperature in Kelvin: " + (input + 273.15));
+            break;
+        case "exit":
+            break;
+        default:
+            Console.WriteLine("Invalid option. Please enter 'F' or 'K'.");
+            break;
+    }
 }
 
 
 //Exercise 6: Factorial Calculator
+Console.WriteLine("\nFactorial Calculator");
+while(true)
+{
+    Console.Write("Enter Number: ");
+    string inputStr = Console.ReadLine();
+    int factorial = 1;
+
+    if (inputStr.ToLower() == "exit")
+    {
+        break;
+    }
+
+    if (!int.TryParse(inputStr, out int input))
+    {
+        Console.WriteLine("Invalid input. Please enter a valid number.");
+        continue;
+    }
+
+    Console.Write($"{input}!=");
+
+    for(int i = 1; i <= input; i++)
+    {
+        factorial *= i;
+        Console.Write(i != input?
+                            $"{i}*":
+                            $"{i}=");
+    }
+    Console.Write($"{factorial}");
+}
