@@ -178,4 +178,32 @@ foreach (int num in arr)
 
 //Exercise 5: Temperature Converter
 
+while (true)
+{    
+        Console.Write("\nTemperature In Celsius: ");
+        string inputStr = Console.ReadLine();
+
+        if (!int.TryParse(inputStr, out int input))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number.");
+            continue;
+        }
+
+        Console.Write("Convert to (F)ahrenheit or (K)elvin: ");
+        string convertTo = Console.ReadLine();
+        switch (convertTo.ToLower())
+        {
+            case "f":
+                Console.WriteLine("Temperature in Fahrenheit: " + (input * 9 / 5 + 32));
+                break;
+            case "k":
+                Console.WriteLine("Temperature in Kelvin: " + (input + 273.15));
+                break;
+            default:
+                Console.WriteLine("Invalid option. Please enter 'F' or 'K'.");
+                break;
+        }
+}
+
+
 //Exercise 6: Factorial Calculator
