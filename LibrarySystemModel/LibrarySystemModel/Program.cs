@@ -27,5 +27,12 @@ public class Program
         member1.BorrowerItem(book1);
         member1.BorrowerItem(book2);
         member1.BorrowerItem(dvd1);
+
+        member1.DisplayBorrowedItems();
+
+        book1.DisplayDetails();
+
+        Console.WriteLine("_______");
+        Console.WriteLine("Book2 title: " + book2.Title); ;
     }
 }
