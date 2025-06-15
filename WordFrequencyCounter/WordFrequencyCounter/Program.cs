@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
 
 namespace WordFrequencyCounter
 {
@@ -9,7 +10,7 @@ namespace WordFrequencyCounter
         {
             Console.Write("Please enter your text: ");
 
-            string strInput = Console.ReadLine().;
+            string strInput = Console.ReadLine();
 
             var result = WordFrequencyCounter(strInput);
 
@@ -21,7 +22,9 @@ namespace WordFrequencyCounter
 
         public static Dictionary<string, int> WordFrequencyCounter(string inputStr)
         {
-            string cleanText = inputStr.ToLower().Trim();
+            //string cleanText = inputStr.ToLower().Trim();
+
+            string cleanText = Regex.Replace(inputStr.ToLower(), @"[^a-z0-9\s]", "");
 
             var wordFrequencies = new Dictionary<string, int>();
 
