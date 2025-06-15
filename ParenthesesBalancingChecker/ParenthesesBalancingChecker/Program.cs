@@ -33,7 +33,7 @@ namespace ParenthesesBalancingChecker
             foreach (char c in input)
             {
                 // If it's an opening bracket, push it onto the stack.
-                if (bracketPairs.ContainsKey(c))
+                if (bracketPairs.ContainsKey(c))//is a clean way of asking: "Is this character c an opening bracket?
                 {
                     stack.Push(c);
                 }
